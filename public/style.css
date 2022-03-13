@@ -1,0 +1,470 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+body {
+  height: 200vh;  
+}
+
+a {
+    color: inherit;
+    text-decoration: inherit;
+}
+
+@media (max-width: 935px){
+    .side-bar {
+        display: none;
+    }
+}
+
+@media (max-width: 614px) {
+    #search-input {
+        display: none;
+    }
+    #logo-name-img {
+        margin-left: 160px;
+    }
+    .actions-container {
+        margin-right: -100px;
+    }
+}
+
+
+/* ------------------------------------------ Header ------------------------------------------ */
+
+header {
+  width: 100vw;
+  position: fixed;
+  height: 3.375rem;
+
+  background: #FFFFFF;
+  border-bottom: 1px solid #DBDBDB;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 3;
+}
+
+.header-container {
+  width: 939px;
+  max-width: 939px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo-container, .actions-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 22px;
+
+  width: 9.375rem;
+  height: inherit;
+
+  outline: none;
+}
+
+#logo-name-img {
+  margin-top: 0.4rem;
+}
+
+#search-input {
+  text-align: center;
+  width: 13.437rem;
+  height: 1.75rem;
+
+  border: 1px solid #DBDBDB;
+  border-radius: 0.2rem;
+
+  outline: none;
+}
+
+/* ------------------------------------------ Main ------------------------------------------ */
+
+main {
+    width: 100vw;
+    height:max-content;
+    background-color: #f0f0f0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-container {
+    width: 939px;
+    max-width: 939px;
+    min-height: 195vw;
+    background-color: #f0f0f0;
+
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-between;
+}
+
+.main-content {
+    position: relative;
+    width: 614px;
+    max-width: 614px;
+    margin-top: 5.2rem;
+    display: flex;
+    /* align-items: flex-start; */
+    justify-content: space-between;
+    /* background-color: aqua; */
+}
+
+/* ---------------------- side-bar ----------------------*/
+
+.side-bar {
+    position: fixed;
+    width: 293px;
+    height: 498px;
+    margin-top: 5.2rem;
+    margin-left: 40.3125rem;
+    background: #f0f0f0;
+    /* border: 1px solid #DBDBDB; */
+    box-sizing: border-box;
+    border-radius: 3px;
+}
+
+.you {
+    height: 6rem;
+    /* background-color: aqua; */
+}
+
+.you img {
+    margin-top: 22px;
+}
+
+.your-name-01 {
+    margin-left: 65px;
+    margin-top: -45px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.your-name-02 {
+    margin-left: 65px;
+    margin-top: 3px;
+    font-size: 13px;
+}
+
+.sugestions-for-you {
+    font-size: 11px;
+    color: #8E8E8E;
+}
+
+.see-all {
+    font-size: 11px;
+    font-weight: bold;
+    margin-left: 249px;
+    margin-top: -12px;
+}
+
+.suggested-profiles {
+    margin-top: 11px;
+}
+
+.suggested-profile-02 img, .suggested-profile-03 img, .suggested-profile-04 img, .suggested-profile-05 img {
+    margin-top: 25px;
+}
+
+.caption-01-suggested-01, .caption-01-suggested-02, .caption-01-suggested-03, .caption-01-suggested-04, .caption-01-suggested-05 {
+    margin-left: 42px;
+    margin-top: -33px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.caption-02-suggested-01, .caption-02-suggested-02, .caption-02-suggested-03, .caption-02-suggested-04, .caption-02-suggested-05 {
+    margin-left: 42px;
+    margin-top: 5px;
+    font-size: 11px;
+    color: #8E8E8E;
+}
+
+.caption-03-suggested-01, .caption-03-suggested-02, .caption-03-suggested-03, .caption-03-suggested-04, .caption-03-suggested-05 {
+    margin-left: 255px;
+    margin-top: -21px;
+    font-size: 13px;
+    color: #139EF2;
+}
+
+.info-options {
+    margin-top: 40px;
+    font-size: 11px;
+    color: #C7C7C7;
+}
+
+.enterprise-data {
+    margin-top: 30px;
+    font-size: 11px;
+    color: #C7C7C7;
+}
+
+/* ---------------------- stories ----------------------*/
+
+.stories-background {
+    height: 100px;
+    margin-top: -2%;
+    margin-left: 3%;
+    margin-right: 3%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* background-color: aqua; */
+}
+
+.story1 {
+    background-image: url(./img/luskson.png);
+    background-size: 56px 58px;
+    background-repeat: no-repeat;
+    /* background-attachment: fixed; */
+    background-position: center;
+    z-index: 1;
+}
+
+.story2 {
+    background-image: url(./img/phil.png);
+    background-size: 56px 58px;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 1;
+}
+
+.story3 {
+    background-image: url(./img/mario.png);
+    background-size: 56px 58px;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 1;
+}
+
+.story4 {
+    background-image: url(./img/sanic.png);
+    background-size: 56px 58px;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 1;
+}
+
+.story5 {
+    background-image: url(./img/pojon.png);
+    background-size: 56px 58px;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 1;
+}
+
+.story6 {
+    background-image: url(./img/chief.png);
+    background-size: 56px 58px;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 1;
+}
+
+.story7 {
+    background-image: url(./img/cloud.png);
+    background-size: 56px 58px;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 1;
+}
+
+.story8 {
+    background-image: url(./img/drake.png);
+    background-size: 56px 58px;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 1;
+}
+
+/* .stories-background img{
+    background-image: url(./img/luskson.png);
+    background-size: 56px 56px;
+    background-repeat: no-repeat;
+} */
+
+.stories-container {
+    display: flex;
+    width: 38.375rem;
+    height: 7.375rem;
+    max-width: none;
+    min-width: 614px;
+    /* margin-top: 5.5rem; */
+
+    align-items: center;
+    justify-content: space-between;
+    background-color: #FFFFFF;
+    border: 1px solid #DBDBDB;
+    border-radius: 3px;
+    z-index: 2;
+}
+
+
+.posts {
+    position: absolute;
+    margin-top: 8.65rem;
+    max-width: 614px;
+    min-height: none;
+    display: flex;
+    flex-direction: column;
+}
+
+.post-01 {
+    position: absolute;
+    width: 38.375rem;
+    height: 749px;
+
+    /* left: 215px; */
+    /* top: 220px; */
+    
+    background: #FFFFFF;
+    border: 1px solid #DBDBDB;
+    box-sizing: border-box;
+    border-radius: 3px;
+}
+
+.post-02 {
+    position: absolute;
+    width: 38.375rem;
+    height: 749px;
+    /* left: 215px; */
+    top: 812px;
+    
+    background: #FFFFFF;
+    border: 1px solid #DBDBDB;
+    box-sizing: border-box;
+    border-radius: 3px;
+}
+
+.post-03 {
+    position: absolute;
+    width: 38.375rem;
+    height: 749px;
+    /* left: 215px; */
+    top: 1624px;
+    
+    background: #FFFFFF;
+    border: 1px solid #DBDBDB;
+    box-sizing: border-box;
+    border-radius: 3px;
+}
+
+
+.post-01 img, .post-02 img, .post-03 img {
+    margin-top: 0;
+}
+
+.post-image-01, .post-image-02, .post-image-03 {
+    margin-top: 0;
+    border-bottom: 1px solid #DBDBDB;
+    height: 613px;
+    width: 612px;
+
+}
+
+.cabecalho-01, .cabecalho-02, .cabecalho-03 {
+    /* display: flex;
+    justify-content: space-between; */
+    height: 61px;
+    border-bottom: 1px solid #DBDBDB;
+    /* background-color: aqua; */
+}
+
+.cabecalho-01 img, .cabecalho-02 img, .cabecalho-03 img {
+    margin-top: 15px;
+    margin-left: 17px;
+}
+
+.profile-name-01 {
+    float: right;
+    margin-top: 25px;
+    margin-right: 375px;
+    font-size: 13px;
+    font-weight: bold;
+    /* background-color: yellow; */
+}
+
+.profile-name-02 {
+    float: right;
+    margin-top: 25px;
+    margin-right: 442px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.profile-name-03 {
+    float: right;
+    margin-top: 25px;
+    margin-right: 507px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.options-01, .options-02, .options-03 {
+    position: absolute;
+    margin-top: -27px;
+    margin-left: 580px;
+    font-size: 14px;
+}
+
+/* .info-01 {
+    background-color: aqua;
+} */
+
+.left-actions-01, .left-actions-02, .left-actions-03 {
+    font-size: 22px;
+    margin-top: 8.44px;
+    margin-left: 14.75px;
+}
+
+.comment-01, .comment-02, .comment-03 {
+    margin-top: -27px;
+    margin-left: 33px;
+}
+
+.send-01, .send-02, .send-03 {
+    margin-top: -25px;
+    margin-left: 65px;
+}
+
+.save-01, .save-02, .save-03 {
+    margin-top: -25px;
+    margin-left: 562px;
+}
+
+.liked-01, .liked-02, .liked-03 {
+    margin-top: 5px;
+    font-size: 13px;
+}
+
+
+.liked-caption-01 b, .liked-caption-02 b, .liked-caption-03 b{
+    font-weight: bold;
+}
+
+.liked-caption-01 {
+    float: right;
+    margin-top: 4px;
+    margin-right: 249px;
+}
+
+.liked-caption-02 {
+    float: right;
+    margin-top: 4px;
+    margin-right: 295px;
+}
+
+.liked-caption-03 {
+    float: right;
+    margin-top: 4px;
+    margin-right: 320px;
+}
