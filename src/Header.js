@@ -1,5 +1,6 @@
 export default function Header () {
-    return (
+  const names = ["paper-plane-outline", "compass-outline", "heart-outline", "person-outline"];  
+  return (
 
       <header>
         <div class="header-container">
@@ -10,10 +11,7 @@ export default function Header () {
             </div>
             <input type="text" id="search-input" placeholder="Pesquisar" />
             <div class="actions-container">
-              <a href="#"><ion-icon name="paper-plane-outline"></ion-icon></a>
-              <a href="#"><ion-icon name="compass-outline"></ion-icon></a>
-              <a href="#"><ion-icon name="heart-outline"></ion-icon></a>
-              <a href="#"><ion-icon name="person-outline"></ion-icon></a>
+              {names.map(iconName => <ion-icon name={iconName}></ion-icon>)}
             </div>
         </div>  
       </header>
